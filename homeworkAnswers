@@ -1,0 +1,8 @@
+1. GameService.js is responsible for defining the URLs on each of the routes for the games resource. A base URL is set as baseURL variable, which is then either called and used, or appended to, to get the correct urls for whichever request is being performed.
+2. The folder structure is split up to keep the client and server folders separate. The server is responsible for interacting with the database (Getting, updating, deleting, putting). The db also creates seed data. The client is responsible for creating and rendering containers and components. The client side is also responsible for taking user input to then pass to the backend to manipulate the games data
+3. Server.js connects to the database and creates variables to easily reference the database, collections within the database and the router
+4. Games router is used to listen out for when the user hits a URL related to games, and to deal with requests while on these paths
+5. The router is used to link the client with the server. URLs in the front end will trigger the router, which will then perform an action in the database. Some URL’s have id’s, which the router uses to target specific data in the database
+6. The optional second argument is an object, which can define the headers of a request based on the keys and values given in the object
+7. getGames, postGame and deleteGame
+8. Using the MongoDB Driver to connect to the db
