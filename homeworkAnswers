@@ -6,3 +6,6 @@
 6. The optional second argument is an object, which can define the headers of a request based on the keys and values given in the object
 7. getGames, postGame and deleteGame
 8. Using the MongoDB Driver to connect to the db
+
+extension:
+1. We use ObjectID because MongoDB gives each entry an object id, where the key is __id and the value is a unique ID
